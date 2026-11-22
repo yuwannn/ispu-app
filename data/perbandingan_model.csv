@@ -1,0 +1,6 @@
+Model,Accuracy,Precision (macro),Recall (macro),F1 (macro),Recall TIDAK SEHAT,F1 macro validasi (CV)
+Baseline persistensi,0.7913,0.6548,0.6562,0.6555,0.4967,
+Baseline kelas mayoritas,0.7686,0.2562,0.3333,0.2897,0.0,
+Logistic Regression,0.4406,0.3269,0.4586,0.2896,0.0,0.5628
+Decision Tree,0.4245,0.4341,0.4611,0.2863,0.0067,0.5863
+Random Forest,0.5398,0.4042,0.5024,0.3903,0.1067,0.6032

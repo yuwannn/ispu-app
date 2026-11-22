@@ -327,8 +327,9 @@ def halaman_prediksi():
         return
 
     with st.container(border=True):
-        c1, c2, c3 = st.columns([1.1, 1.3, 1])
-        nama_model = c1.selectbox("Model", list(tersedia), help="Model yang tersedia di folder models/")
+        nama_model = "Random Forest"
+        st.markdown("**Model yang digunakan:** Random Forest")
+        c2, c3 = st.columns([1.3, 1])
         stasiun = c2.selectbox("Stasiun", STASIUN)
         g = df[df["stasiun"] == stasiun]
         tmin, tmax = g["tanggal"].min().date(), g["tanggal"].max().date()
